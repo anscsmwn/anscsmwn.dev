@@ -2,12 +2,14 @@ import { NextPage } from 'next';
 import Image from 'next/image';
 
 import Link from 'next/link';
+import Canvas from '../components/canvas/Canvas';
 import Doodle from '../components/layout/Doodle';
 import Main from '../components/layout/Main';
 
 const Home: NextPage = () => {
   return (
     <Main className="cursor-pencil dark:cursor-pencil-dark">
+      <Canvas />
       <div className="m-auto flex flex-col items-center gap-4 pt-5 sm:w-[90%] sm:flex-row sm:pt-20 md:w-[85%] lg:w-[90%] ">
         <div className="noselect">
           <Image src="/me.png" alt="me" priority width={270} height={200} />
