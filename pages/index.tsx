@@ -15,7 +15,7 @@ const Home: NextPage = () => {
           <Image src="/me.png" alt="me" priority width={270} height={200} />
           <Doodle />
         </div>
-        <div className="mx-auto max-w-2xl">
+        <div className="mx-auto max-w-2xl text-center md:text-left">
           <h1 className="font-doodle">Hi, I&apos;m Nas.👋</h1>
           <div>
             <p className="noselect text-md my-5 max-w-[550px] text-center md:text-left md:text-lg">
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
             <p>
               Checkout my{' '}
               <Link
-                href="/about"
+                href="/projects"
                 className="cursor-pointer relative z-20 font-bold underline decoration-[#CAF688] dark:decoration-[#CAF688]"
               >
                 past works

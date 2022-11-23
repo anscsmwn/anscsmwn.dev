@@ -2,10 +2,11 @@ import React from 'react';
 import Link from 'next/link';
 import { links } from './Constant';
 import ThemeSwitcher from './ThemeSwitcher';
+import ModalNavigation from './ModalNavigation';
 
 const NavbarDesktop = () => {
   return (
-    <nav className="sticky top-0 z-20 w-full border-b-2 border-dashed border-gray-200 px-4 dark:border-light sm:px-6 lg:px-8">
+    <nav className="sticky top-0 z-20 w-full border-b-2 border-dashed border-gray-200 bg-white px-4 dark:border-light dark:bg-dark sm:px-6 lg:px-8">
       <div className="mx-auto flex w-full max-w-7xl justify-between">
         <div className="flex space-x-5">
           <Link
@@ -14,7 +15,7 @@ const NavbarDesktop = () => {
           >
             anscsmwn.dev
           </Link>
-          <ul className="flex">
+          <ul className="hidden md:flex">
             {links.map((link) => {
               return (
                 <li
@@ -27,7 +28,10 @@ const NavbarDesktop = () => {
             })}
           </ul>
         </div>
-        <ThemeSwitcher />
+        <ModalNavigation />
+        <div className="hidden items-center justify-center md:flex">
+          <ThemeSwitcher />
+        </div>
       </div>
     </nav>
   );

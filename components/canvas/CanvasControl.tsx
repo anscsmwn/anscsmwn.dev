@@ -12,7 +12,7 @@ const colorList = [
 ];
 const CanvasControl = ({ clearCanvas, color, setColor }: ControlProps) => {
   return (
-    <div className="fixed top-[10%] right-1 z-50 rounded-full bg-gray-100 p-2 dark:bg-light md:top-[35%]">
+    <div className="fixed top-[20%] right-1 z-50 rounded-full bg-gray-100 p-2 dark:bg-light md:top-[35%]">
       <div className="flex flex-col space-y-2">
         {colorList.map((data, key) => (
           <button
