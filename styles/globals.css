@@ -8,6 +8,9 @@
   src: url(/fonts/Virgil.woff2) format('woff2');
 }
 
+.link {
+  @apply z-20 font-[600] underline decoration-black dark:decoration-white;
+}
 @layer base {
   h1 {
     @apply text-3xl font-bold md:text-5xl;
@@ -23,6 +26,9 @@
 
   h4 {
     @apply text-lg font-bold md:text-xl;
+  }
+  p {
+    @apply text-lg leading-relaxed dark:text-gray-300;
   }
 }
 

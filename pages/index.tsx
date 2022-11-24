@@ -34,25 +34,19 @@ const Home: NextPage = () => {
                 </svg>
               </span>
             </h1>
-            <div>
-              <p className="noselect text-md my-2 text-center md:text-left md:text-lg">
+            <div className="my-2 text-center dark:text-white md:text-left">
+              <p className="noselect my-2">
                 I&apos;m a software engineer who make a computer goes beep
                 boop... Currently, I&apos;m focusing on learning about front-end
                 developer and UI/UX design.
               </p>
               <p>
                 Checkout my{' '}
-                <Link
-                  href="/projects"
-                  className="cursor-pointer relative z-20 font-semibold tracking-wide underline decoration-black dark:decoration-white "
-                >
+                <Link className="link" href="/projects">
                   past works
                 </Link>{' '}
                 or learn more{' '}
-                <Link
-                  href="/about"
-                  className="cursor-pointer relative z-20 font-semibold tracking-wide underline decoration-black dark:decoration-white "
-                >
+                <Link href="/about" className="link">
                   about me
                 </Link>
               </p>

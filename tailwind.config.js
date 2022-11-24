@@ -9,6 +9,10 @@ module.exports = {
   darkMode: 'class',
 
   theme: {
+    letterSpacing: {
+      wider: '.05em',
+      widest: '.1em',
+    },
     extend: {
       fontFamily: {
         doodle: ['Virgil', ...fontFamily.sans],

@@ -8,7 +8,7 @@ const Main: React.FC<MainProps> = ({ children, className, ...props }) => {
     <>
       <div
         id="main-content"
-        className={`mx-auto flex w-full max-w-5xl flex-1 flex-col px-2 md:px-0 md:pt-20 ${className}`}
+        className={`mx-auto flex w-full max-w-5xl flex-1 flex-col px-5 md:px-0 md:pt-20 ${className}`}
         {...props}
       >
         {children}
