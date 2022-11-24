@@ -1,7 +1,7 @@
+import Main from '@/components/layout/Main';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import Main from '../components/layout/Main';
 
 const NotFound = () => {
   const { asPath } = useRouter();

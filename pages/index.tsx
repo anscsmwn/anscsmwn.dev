@@ -1,11 +1,11 @@
+import Canvas from '@/components/canvas/Canvas';
+import Doodle from '@/components/layout/Doodle';
+import Main from '@/components/layout/Main';
 import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 
 import Link from 'next/link';
-import Canvas from '../components/canvas/Canvas';
-import Doodle from '../components/layout/Doodle';
-import Main from '../components/layout/Main';
 
 const Home: NextPage = () => {
   return (

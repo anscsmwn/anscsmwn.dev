@@ -1,13 +1,15 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
-import Navbar from '../components/layout/navbar/Navbar';
-import Footer from '../components/layout/Footer';
-import NextNProgress from 'nextjs-progressbar';
-import { usePanelbear } from '@panelbear/panelbear-nextjs';
 
+import NextNProgress from 'nextjs-progressbar';
+import { usePanelbear } from '../lib/usePanelBear';
+
+import Navbar from '@/components/layout/navbar/Navbar';
+import Footer from '@/components/layout/Footer';
+import config from 'site.config';
 function MyApp({ Component, pageProps }: AppProps) {
-  usePanelbear('8a1yWUtCrc9');
+  usePanelbear(config.panelbear);
   return (
     <ThemeProvider attribute="class">
       <NextNProgress height={2} />

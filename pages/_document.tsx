@@ -1,5 +1,5 @@
+import Favicon from '@/components/Favicon';
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document';
-import Favicon from '../components/Favicon';
 
 export default class Document extends NextDocument {
   render() {

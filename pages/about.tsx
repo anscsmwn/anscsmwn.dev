@@ -1,7 +1,7 @@
+import AboutMe from '@/components/about/AboutMe';
+import Head from '@/components/Head';
+import Main from '@/components/layout/Main';
 import React from 'react';
-import AboutMe from '../components/about/AboutMe';
-import Head from '../components/Head';
-import Main from '../components/layout/Main';
 
 const about = () => {
   return (
