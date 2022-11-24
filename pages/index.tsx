@@ -15,13 +15,13 @@ const Home: NextPage = () => {
       </Head>
       <Main className="cursor-pencil dark:cursor-pencil-dark">
         <Canvas />
-        <div className="flex flex-col items-center justify-between sm:flex-row">
+        <div className="relative bottom-10 flex flex-col items-center sm:static sm:mb-0 md:flex-row md:gap-10">
           <div className="noselect relative">
-            <Image src="/me.svg" alt="me" priority width={300} height={200} />
+            <Image src="/me.svg" alt="me" priority width={300} height={300} />
             <Doodle />
           </div>
-          <div className="max-w-2xl text-center md:text-left">
-            <h1 className="font-doodle">
+          <div className="w-full text-center md:max-w-md md:text-left lg:max-w-2xl">
+            <h1 className="noselect font-doodle">
               Hi, I&apos;m Nas.
               <span>
                 <svg
@@ -34,19 +34,19 @@ const Home: NextPage = () => {
                 </svg>
               </span>
             </h1>
-            <div className="my-2 text-center dark:text-white md:text-left">
-              <p className="noselect my-2">
+            <div className="dark:text-gray-300; my-2 text-center text-lg leading-relaxed dark:text-white md:text-left">
+              <p className="noselect my-2 leading-normal">
                 I&apos;m a software engineer who make a computer goes beep
                 boop... Currently, I&apos;m focusing on learning about front-end
                 developer and UI/UX design.
               </p>
-              <p>
+              <p className="leading-normal">
                 Checkout my{' '}
-                <Link className="link" href="/projects">
+                <Link className="link relative z-20" href="/projects">
                   past works
                 </Link>{' '}
                 or learn more{' '}
-                <Link href="/about" className="link">
+                <Link href="/about" className="link relative z-20">
                   about me
                 </Link>
               </p>

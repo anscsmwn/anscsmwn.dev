@@ -9,7 +9,7 @@ const AboutMe = () => {
           About
         </Link>
       </h2>
-      <div>
+      <div className="dark:text-gray-300; text-lg leading-relaxed">
         <p className="mt-4">
           Hello, my name is <b>Annas Casmawan Ahmad</b>, you can call me{' '}
           <b>Anca</b>. Yes, i changed my nickname haha, if you&apos;re my

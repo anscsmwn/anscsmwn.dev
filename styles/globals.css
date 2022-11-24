@@ -9,7 +9,7 @@
 }
 
 .link {
-  @apply z-20 font-[600] underline decoration-black dark:decoration-white;
+  @apply font-semibold underline decoration-black dark:decoration-white;
 }
 @layer base {
   h1 {
@@ -26,9 +26,6 @@
 
   h4 {
     @apply text-lg font-bold md:text-xl;
-  }
-  p {
-    @apply text-lg leading-relaxed dark:text-gray-300;
   }
 }
 
