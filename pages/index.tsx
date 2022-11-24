@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       </Head>
       <Main className="cursor-pencil dark:cursor-pencil-dark">
         <Canvas />
-        <div className="relative bottom-10 flex flex-col items-center sm:static sm:mb-0 md:flex-row md:gap-10">
+        <div className="flex flex-col items-center sm:static sm:mb-0 md:flex-row md:gap-10">
           <div className="noselect relative">
             <Image src="/me.svg" alt="me" priority width={300} height={300} />
             <Doodle />
@@ -34,7 +34,7 @@ const Home: NextPage = () => {
                 </svg>
               </span>
             </h1>
-            <div className="dark:text-gray-300; my-2 text-center text-lg leading-relaxed dark:text-white md:text-left">
+            <div className="dark:text-gray-300; my-2 text-center text-sm leading-relaxed dark:text-white sm:text-lg md:text-left">
               <p className="noselect my-2 leading-normal">
                 I&apos;m a software engineer who make a computer goes beep
                 boop... Currently, I&apos;m focusing on learning about front-end

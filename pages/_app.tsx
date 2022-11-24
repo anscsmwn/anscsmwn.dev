@@ -4,9 +4,10 @@ import { ThemeProvider } from 'next-themes';
 import Navbar from '../components/layout/navbar/Navbar';
 import Footer from '../components/layout/Footer';
 import NextNProgress from 'nextjs-progressbar';
-import { usePanelbear } from '../lib/usePanelBear';
+import { usePanelbear } from '@panelbear/panelbear-nextjs';
+
 function MyApp({ Component, pageProps }: AppProps) {
-  usePanelbear(process.env.NEXT_PUBLIC_PANELBEAR_ID as string);
+  usePanelbear('8a1yWUtCrc9');
   return (
     <ThemeProvider attribute="class">
       <NextNProgress height={2} />
