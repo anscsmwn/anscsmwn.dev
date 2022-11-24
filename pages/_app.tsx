@@ -11,7 +11,7 @@ import config from 'site.config';
 function MyApp({ Component, pageProps }: AppProps) {
   usePanelbear(config.panelbear);
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider enableSystem={false} attribute="class">
       <NextNProgress height={2} />
       <div className="flex min-h-screen flex-col">
         <Navbar />
