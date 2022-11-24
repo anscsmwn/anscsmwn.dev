@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
 import { SiGmail, SiSpotify, SiGithub } from 'react-icons/si';
+import * as Panelbear from '@panelbear/panelbear-js';
+
 const Contact = () => {
   const data = [
     {
@@ -19,6 +21,9 @@ const Contact = () => {
       icon: SiSpotify,
     },
   ];
+  const handleViewResume = () => {
+    Panelbear.track('ViewResume');
+  };
   return (
     <section className="my-5">
       <h2 id="contacts">
@@ -51,8 +56,9 @@ const Contact = () => {
       <p className="mt-4 text-xl leading-relaxed dark:text-gray-300">
         Also, you can read my resume{' '}
         <Link
+          onClick={handleViewResume}
           className="link"
-          href="https://drive.google.com/drive/u/0/folders/1mYAuwAzBKZxPNkXTa4Qm9-xz9mhd7xgM"
+          href="https://drive.google.com/file/d/1eXtJ0fg4av2KiLo1dbx5sVnV7_qjtfq7/view?usp=sharing"
         >
           here
         </Link>
