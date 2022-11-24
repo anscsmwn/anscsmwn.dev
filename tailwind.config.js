@@ -11,7 +11,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter', ...fontFamily.sans],
         doodle: ['Virgil', ...fontFamily.sans],
         lato: ['Lato', ...fontFamily.sans],
       },

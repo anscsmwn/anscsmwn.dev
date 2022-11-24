@@ -20,7 +20,7 @@ const Home: NextPage = () => {
             <Image src="/me.svg" alt="me" priority width={300} height={200} />
             <Doodle />
           </div>
-          <div className="max-w-xl text-center md:text-left">
+          <div className="max-w-2xl text-center md:text-left">
             <h1 className="font-doodle">
               Hi, I&apos;m Nas.
               <span>
@@ -36,7 +36,7 @@ const Home: NextPage = () => {
             </h1>
             <div>
               <p className="noselect text-md my-2 text-center md:text-left md:text-lg">
-                I&apos;m a <i>prigrimir</i> who make the computer goes beep
+                I&apos;m a software engineer who make a computer goes beep
                 boop... Currently, I&apos;m focusing on learning about front-end
                 developer and UI/UX design.
               </p>
@@ -44,14 +44,14 @@ const Home: NextPage = () => {
                 Checkout my{' '}
                 <Link
                   href="/projects"
-                  className="cursor-pointer relative z-20 font-bold underline decoration-black dark:decoration-white "
+                  className="cursor-pointer relative z-20 font-semibold tracking-wide underline decoration-black dark:decoration-white "
                 >
                   past works
                 </Link>{' '}
                 or learn more{' '}
                 <Link
                   href="/about"
-                  className="cursor-pointer relative z-20 font-bold underline decoration-black dark:decoration-white "
+                  className="cursor-pointer relative z-20 font-semibold tracking-wide underline decoration-black dark:decoration-white "
                 >
                   about me
                 </Link>

@@ -11,18 +11,20 @@ const NavbarDesktop = () => {
         <div className="flex space-x-5">
           <Link
             href="/"
-            className="py-5 px-3 font-doodle text-xl transition duration-200 ease-in-out hover:bg-gray-300 dark:hover:bg-light"
+            className="py-5 px-3 font-doodle text-2xl transition duration-200 ease-in-out hover:bg-gray-300 dark:hover:bg-light"
           >
             anscsmwn.dev
           </Link>
           <ul className="flex">
             {links.map((link) => {
               return (
-                <li
-                  key={link.url}
-                  className="min-w-16 py-5 px-3 text-center font-semibold transition duration-200 ease-in-out hover:bg-gray-300 dark:hover:bg-light"
-                >
-                  <Link href={link.url}>{link.text}</Link>
+                <li key={link.url}>
+                  <Link
+                    className="inline-block py-6 px-3 text-center font-semibold transition duration-200 ease-in-out hover:bg-gray-300 dark:hover:bg-light"
+                    href={link.url}
+                  >
+                    {link.text}
+                  </Link>
                 </li>
               );
             })}
