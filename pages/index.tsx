@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       </Head>
       <Main className="cursor-pencil dark:cursor-pencil-dark">
         <Canvas />
-        <div className="mt-12 flex flex-col items-center justify-between sm:mt-0 sm:flex-row">
+        <div className="mt-7 flex flex-col items-center justify-between sm:mt-0 sm:flex-row">
           <div className="noselect relative">
             <Image src="/me.svg" alt="me" priority width={300} height={200} />
             <Doodle />
