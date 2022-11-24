@@ -39,7 +39,7 @@ const AboutMe = () => {
         </p>
         <p className="mt-4">
           I love exploring everything related to technology. In my sophomore
-          year, I learned a lot from the community, i join many community and
+          year, I learned a lot from the community, I join many community and
           orgs to expand my knowledge, I&apos;m member of{' '}
           <Link
             className="link"
