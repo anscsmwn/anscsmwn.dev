@@ -3,7 +3,7 @@ import { ReactSketchCanvas } from 'react-sketch-canvas';
 import CanvasControl from './CanvasControl';
 
 const Canvas = () => {
-  const [color, setColor] = useState('rgba(255, 0, 0, 0.5)');
+  const [color, setColor] = useState('rgba(255, 0, 0, 0.6)');
   const canvasRef = useRef(null);
   const clearHandler = () => {
     // @ts-ignore
