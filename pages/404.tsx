@@ -6,7 +6,7 @@ import Main from '../components/layout/Main';
 const NotFound = () => {
   const { asPath } = useRouter();
   return (
-    <Main className="text-center">
+    <Main className="mt-20 text-center">
       <Head>
         <title>404 - Page Not Found</title>
       </Head>

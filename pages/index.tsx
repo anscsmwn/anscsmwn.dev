@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import Head from 'next/head';
 import Image from 'next/image';
 
 import Link from 'next/link';
@@ -9,9 +10,12 @@ import Main from '../components/layout/Main';
 const Home: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>Hi, I&apos;m Nas.</title>
+      </Head>
       <Main className="cursor-pencil dark:cursor-pencil-dark">
         <Canvas />
-        <div className="flex flex-col items-center justify-between sm:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-between sm:mt-0 sm:flex-row">
           <div className="noselect relative">
             <Image src="/me.svg" alt="me" priority width={300} height={200} />
             <Doodle />
