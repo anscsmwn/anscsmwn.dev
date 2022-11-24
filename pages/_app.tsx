@@ -6,9 +6,7 @@ import Footer from '../components/layout/Footer';
 import { usePanelbear } from '@panelbear/panelbear-nextjs';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  usePanelbear(process.env.NEXT_PUBLIC_PANELBEAR_ID as string, {
-    debug: true,
-  });
+  usePanelbear(process.env.NEXT_PUBLIC_PANELBEAR_ID as string, {});
   return (
     <ThemeProvider attribute="class">
       <div className="flex min-h-screen flex-col">
