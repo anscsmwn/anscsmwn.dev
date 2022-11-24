@@ -13,6 +13,7 @@ module.exports = {
       fontFamily: {
         inter: ['Inter', ...fontFamily.sans],
         doodle: ['Virgil', ...fontFamily.sans],
+        lato: ['Lato', ...fontFamily.sans],
       },
       colors: {
         dark: '#1d1d1d',
