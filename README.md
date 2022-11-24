@@ -15,6 +15,7 @@ Tools i'm using to build this project
 
 - [Next.js](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [PanelBear](https://panelbear.com/)
 - [Hosted on Vercel](https://vercel.com)
 
 ## Credits
