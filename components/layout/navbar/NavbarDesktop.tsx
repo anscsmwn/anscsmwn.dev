@@ -6,7 +6,7 @@ import ModalNavigation from './ModalNavigation';
 
 const NavbarDesktop = () => {
   return (
-    <nav className="sticky top-0 z-20 w-full border-b-2 border-dashed border-gray-200 bg-white px-4 dark:border-light dark:bg-dark sm:px-6 lg:px-8">
+    <nav className="fixed top-0 z-20 w-full border-b-2 border-dashed border-gray-200 bg-white px-4 dark:border-light dark:bg-dark sm:px-6 lg:px-8">
       <div className="mx-auto flex w-full max-w-7xl justify-between">
         <div className="flex space-x-5">
           <Link

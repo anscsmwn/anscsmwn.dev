@@ -3,7 +3,7 @@ import React from 'react';
 const Doodle = () => {
   return (
     <svg
-      className="relative bottom-14 z-10 m-auto w-60 sm:right-9 sm:w-80"
+      className="absolute bottom-3 right-3 z-10 m-auto w-60 sm:right-0 sm:-left-5 sm:w-80"
       width="276"
       height="60"
       viewBox="0 0 276 60"

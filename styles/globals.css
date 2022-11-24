@@ -43,7 +43,7 @@ html {
 
 body {
   color: #202020;
-  @apply font-sans transition-colors dark:bg-dark dark:text-white;
+  @apply transition-colors dark:bg-dark dark:text-white;
 }
 
 .noselect {

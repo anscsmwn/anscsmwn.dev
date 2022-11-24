@@ -6,13 +6,13 @@ interface MainProps {
 const Main: React.FC<MainProps> = ({ children, className, ...props }) => {
   return (
     <>
-      <main
+      <div
         id="main-content"
-        className={`mx-auto flex w-full max-w-7xl flex-1 flex-col px-4 sm:px-6 lg:px-8 ${className}`}
+        className={`mx-auto flex w-full max-w-5xl flex-1 flex-col px-2 md:px-0 md:pt-20 ${className}`}
         {...props}
       >
         {children}
-      </main>
+      </div>
     </>
   );
 };

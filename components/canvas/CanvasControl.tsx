@@ -6,9 +6,9 @@ interface ControlProps {
   setColor: (color: string) => void;
 }
 const colorList = [
-  'rgba(255, 0, 0, 0.5)',
-  'rgba(213,248,160,255)',
-  'rgba(0, 0, 255, 0.5)',
+  'rgba(255, 0, 0, 0.6)',
+  'rgba(213,248,160,0.6)',
+  'rgba(0, 0, 255, 0.6)',
 ];
 const CanvasControl = ({ clearCanvas, color, setColor }: ControlProps) => {
   return (
