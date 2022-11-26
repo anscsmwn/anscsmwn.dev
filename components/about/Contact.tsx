@@ -58,7 +58,7 @@ const Contact = () => {
         <Link
           onClick={handleViewResume}
           className="link"
-          href="https://drive.google.com/file/d/1eXtJ0fg4av2KiLo1dbx5sVnV7_qjtfq7/view?usp=sharing"
+          href="https://drive.google.com/file/d/1g1vUf7EE5lf9FgQxegkZ9ELQf7r2fQdQ/view?usp=sharing"
         >
           here
         </Link>
