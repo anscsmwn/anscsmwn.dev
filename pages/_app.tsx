@@ -10,7 +10,7 @@ import config from 'site.config';
 import { usePanelbear } from '@panelbear/panelbear-nextjs';
 function MyApp({ Component, pageProps }: AppProps) {
   usePanelbear(config.panelbear, {
-    debug: true,
+    debug: false,
   });
   return (
     <ThemeProvider enableSystem={false} attribute="class">
