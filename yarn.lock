@@ -1006,10 +1006,10 @@
   "resolved" "https://registry.npmjs.org/fraction.js/-/fraction.js-4.2.0.tgz"
   "version" "4.2.0"
 
-"framer-motion@^7.6.9":
-  "integrity" "sha512-byPSPOqKApmVUvbtvmFCyL09dqBNLUwkXRQMeTsawtF6YpiB54yCVzk+9YXAnoswMSgsB7CQaA6ls7e8QL+C+g=="
-  "resolved" "https://registry.npmjs.org/framer-motion/-/framer-motion-7.6.9.tgz"
-  "version" "7.6.9"
+"framer-motion@^7.6.15":
+  "integrity" "sha512-z3LPTWWq3zlmtxtZyCHWyucNRHg8iXXeLo9cFQwCIgOT8mp3gWFzU+KrGQ9h3QJFx79G9MVqAcuIN6dVhhuFQQ=="
+  "resolved" "https://registry.npmjs.org/framer-motion/-/framer-motion-7.6.15.tgz"
+  "version" "7.6.15"
   dependencies:
     "@motionone/dom" "10.13.1"
     "framesync" "6.1.2"

@@ -21,7 +21,7 @@ const ProjectItem = ({ project }: ProjectItemProps) => {
   return (
     <article className="flex w-full flex-col gap-5 rounded-md border-2 border-dashed border-gray-200 p-3 dark:border-light dark:text-gray-300 md:flex-row">
       <Image
-        className="w-full md:w-fit"
+        className="w-full md:max-w-lg"
         width={500}
         height={500}
         src={project.preview}
