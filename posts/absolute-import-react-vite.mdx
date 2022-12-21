@@ -1,0 +1,147 @@
+---
+title: Making Life Easier with Absolute Imports - React in Javascript and Typescript
+date: 'Desember 21, 2022'
+description: Learn how to using absolute imports to better organize your React project is a great way.
+thumbnailUrl: '/javascript-functions-thumbnail.jpeg'
+---
+
+<br />
+
+Kami terbiasa mengimpor file seperti ini `../../../Components/Dashboard/Profil` dan ini cukup standar selama ini. Namun mengelola semua `../` ini cukup sulit. Katakanlah saya ingin mengubah lokasi file atau folder. Tunggu. Apakah saya harus melakukan itu? Tidakkah itu akan merusak sesuatu? Tanya-tanya seperti itu tiba-tiba menyerang kita.
+Di sini datang absolute import sebagai pelindung, Kami sekarang dapat mengimpor file dalam bentuk ini `Components/Dashboard/Profil` tanpa repot dengan `../` dan kami tidak peduli tentang posisi relatif dari dua file tersebut. Yang kita peduli hanya posisi file tersebut relatif terhadap root dari proyek. Ini mempermudah pekerjaan mengimpor banyak. Mari lihat bagaimana cara pasti untuk melakukannya.
+
+<br />
+Keuntungan dari absolute import:
+
+<ol>
+  <li>
+    **Mempermudah pemeliharaan**: Dengan absolute import, Anda tidak perlu
+    memikirkan posisi relatif dari file yang ingin Anda import. Anda hanya perlu
+    mengetahui posisi file tersebut relatif terhadap root proyek, sehingga lebih
+    mudah untuk memelihara dan mengubah struktur proyek.
+  </li>
+  <li>
+    **Lebih mudah dibaca**: Impor absolut lebih mudah dibaca karena tidak perlu
+    memikirkan relasi antara file yang diimport dan file yang mengimportnya. Ini
+    membuat kode Anda lebih mudah dipahami oleh orang lain yang bekerja di
+    proyek yang sama.
+  </li>
+  <li>
+    **Lebih mudah di-debug**: Impor absolut juga memudahkan proses debugging
+    karena Anda tidak perlu mengikuti alur ../ untuk menemukan file yang
+    diimport. Anda hanya perlu melihat lokasi file tersebut relatif terhadap
+    root proyek.
+  </li>
+  <li>
+    **Lebih mudah di-refactor**: Impor absolut juga memudahkan proses
+    refactoring kode karena Anda tidak perlu mengubah semua alur impor jika Anda
+    memindahkan file ke lokasi yang berbeda dalam struktur proyek.
+  </li>
+  <li>
+    **Lebih mudah di-scale**: Impor absolut juga memudahkan skalabilitas proyek
+    karena Anda tidak perlu khawatir tentang mengelola banyak alur impor yang
+    mungkin terjadi saat menambahkan file baru atau memindahkan file yang ada.
+  </li>
+</ol>
+
+<br />
+
+### Get Started
+
+According to create-react-app Docs, We can use absolute imports in our react project by configuring a `jsconfig.json / tsconfig.json` (for typescript projects) file in the root of our project. If you're using TypeScript in your project, you will already have a `tsconfig.json` file.
+
+If working in **JS**, add a `jsconfig.json` file in the root of your project with the following content:
+
+<div className="code-container">
+```
+{
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
+  "include": ["src"]
+}
+```
+</div>
+
+If you’re using **TypeScript**, you will already have a `tsconfig.json` file in the root of your project. You can configure the `baseUrl` setting inside the `compilerOptions` of your project's `tsconfig.json` file to start working with absolute imports. The file content would look like this:
+
+<div className="code-container">
+```
+{
+  "compilerOptions": {
+    ...,
+    "baseUrl": "src"
+  },
+  "include": [
+    "src"
+  ]
+}
+```
+</div>
+
+In the above file, I have just added a `baseUrl` setting with value src in my `compilerOptions` Nothing else has been changed from the original `tsconfig.json` generated.
+
+<br />
+
+### Converting Relative Imports into Absolute Imports
+
+We have configured our project to use absolute imports, now let's use it.
+
+This is a file without absolute imports
+
+<div className="code-container">
+```
+import ContentWrapper from '../../../../Components/ContentWrapper'
+
+const SampleComponent = () => {
+
+return (
+
+<ContentWrapper
+  style={{
+    width: '100%',
+    padding: '20px 10px',
+    marginBottom: '10px',
+  }}
+>
+  <div>This is a sample component.</div>
+</ContentWrapper>
+) }
+
+export default SampleComponent
+```
+</div>
+
+We just need to drop `../../../` from the imports. Now the file looks like
+
+<div className="code-container">
+```
+import ContentWrapper from 'Components/ContentWrapper'
+
+const SampleComponent = () => {
+
+return (
+
+<ContentWrapper
+  style={{
+    width: '100%',
+    padding: '20px 10px',
+    marginBottom: '10px',
+  }}
+>
+  <div>This is a sample component.</div>
+</ContentWrapper>
+) }
+
+export default SampleComponent
+```
+</div>
+
+<br />
+Now that we’ve configured our project to support absolute imports, we can import
+a module located at `src/components/Button.js`, like so:
+<br />
+`import Button from 'components/Button';`
+<br />
+🔥 And it’s done. We have successfully configured and used absolute imports in our
+React App.

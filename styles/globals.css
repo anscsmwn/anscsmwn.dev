@@ -21,11 +21,20 @@
   }
 
   h3 {
-    @apply text-xl font-bold md:text-3xl;
+    @apply mb-1 text-xl font-bold md:text-3xl;
   }
 
   h4 {
     @apply text-lg font-bold md:text-xl;
+  }
+  ol {
+    @apply ml-2 mt-5 list-decimal;
+  }
+  li {
+    @apply list-outside;
+  }
+  code {
+    @apply rounded-md bg-gray-100 font-mono text-sm dark:bg-gray-800;
   }
 }
 
@@ -36,6 +45,10 @@ html {
 body {
   color: #202020;
   @apply font-lato transition-colors dark:bg-dark dark:text-white;
+}
+
+.code-container {
+  @apply my-4 rounded-md bg-gray-100 p-4 dark:bg-gray-800;
 }
 
 .noselect {
