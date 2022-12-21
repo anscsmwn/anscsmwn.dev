@@ -16,8 +16,8 @@ const SingleBlog = ({ frontMatter, mdxSource, readingTime }: Post) => {
       <Head title="Blogs" />
       <Main className="my-6 px-5">
         <div>
-          <h1 className="text-6xl">{frontMatter.title}</h1>
-          <p className="my-5 text-xl leading-relaxed dark:text-gray-300">
+          <h1 className="text-2xl md:text-6xl">{frontMatter.title}</h1>
+          <p className="my-5 text-lg leading-relaxed dark:text-gray-300 md:text-xl">
             {frontMatter.description}
           </p>
           <div className="mt-2 flex items-center gap-2 text-sm text-gray-600 dark:text-zinc-300">

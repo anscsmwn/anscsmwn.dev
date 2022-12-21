@@ -34,7 +34,7 @@
     @apply list-outside;
   }
   code {
-    @apply rounded-md bg-gray-100 font-mono text-lg dark:bg-gray-800;
+    @apply break-words rounded-md bg-gray-100 font-mono text-lg dark:bg-gray-800;
   }
 }
 
@@ -48,7 +48,7 @@ body {
 }
 
 .code-container {
-  @apply my-4 rounded-md bg-gray-100 p-4 dark:bg-gray-800;
+  @apply my-4 overflow-auto rounded-md bg-gray-100 p-4 dark:bg-gray-800;
 }
 
 .noselect {
