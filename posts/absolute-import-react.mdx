@@ -1,56 +1,55 @@
 ---
-title: Making Life Easier with Absolute Imports - React in Javascript and Typescript
+title: Menggunakan Absolute Import di React dengan Javascript dan Typescript
 date: 'Desember 21, 2022'
-description: Learn how to using absolute imports to better organize your React project is a great way.
-thumbnailUrl: '/javascript-functions-thumbnail.jpeg'
+description: 'Belajar menggunakan absolute import untuk mengorganisir project react dengan lebih baik.😎'
+thumbnailUrl: '/blog/absolute-import-react.png'
 ---
 
 <br />
 
-Kami terbiasa mengimpor file seperti ini `../../../Components/Dashboard/Profil` dan ini cukup standar selama ini. Namun mengelola semua `../` ini cukup sulit. Katakanlah saya ingin mengubah lokasi file atau folder. Tunggu. Apakah saya harus melakukan itu? Tidakkah itu akan merusak sesuatu? Tanya-tanya seperti itu tiba-tiba menyerang kita.
-Di sini datang absolute import sebagai pelindung, Kami sekarang dapat mengimpor file dalam bentuk ini `Components/Dashboard/Profil` tanpa repot dengan `../` dan kami tidak peduli tentang posisi relatif dari dua file tersebut. Yang kita peduli hanya posisi file tersebut relatif terhadap root dari proyek. Ini mempermudah pekerjaan mengimpor banyak. Mari lihat bagaimana cara pasti untuk melakukannya.
+Selama ini, saat mengerjakan project menggunakan react kita terbiasa mengimport file seperti ini `../../../Components/Dashboard/Profil` dan tidak ada yang salah dengan melakukannya seperti ini. Namun mengelola semua `../` ini cukup sulit dan kadang membuat error saat memanggil class atau function yang telah dibuat. Katakanlah saya ingin mengubah lokasi file atau folder. Dengan melakukan import menggunakan relative path kita perlu mengetahui posisi file tersebut relatif terhadap file yang mengimportnya. Jadi Relative Path sangat tergantung pada struktur folder yang kita buat
 
 <br />
-Keuntungan dari absolute import:
+Di sini datang absolute import sebagai solusi, Sekarang kita dapat mengimpor file
+dalam bentuk ini `Components/Dashboard/Profil` tanpa repot dengan `../` dan kita
+tidak pelru memikirkan tentang posisi relatif dari dua file tersebut. Yang kita pedulikan
+hanya posisi file tersebut relatif terhadap root dari proyek. Ini mempermudah pekerjaan
+mengimpor banyak.
+
+<br />
+#### Keuntungan dari absolute import :
 
 <ol>
   <li>
-    **Mempermudah pemeliharaan**: Dengan absolute import, Anda tidak perlu
-    memikirkan posisi relatif dari file yang ingin Anda import. Anda hanya perlu
-    mengetahui posisi file tersebut relatif terhadap root proyek, sehingga lebih
-    mudah untuk memelihara dan mengubah struktur proyek.
+    Dengan absolute import, Anda tidak perlu memikirkan posisi relatif dari file
+    yang ingin Anda import. Anda hanya perlu mengetahui posisi file tersebut
+    relatif terhadap root proyek, sehingga lebih mudah untuk memelihara dan
+    mengubah struktur proyek.
   </li>
   <li>
-    **Lebih mudah dibaca**: Impor absolut lebih mudah dibaca karena tidak perlu
+    Lebih mudah melakukan debugging karena Anda tidak perlu mengikuti alur `../`
+    untuk menemukan file yang diimport. Anda hanya perlu melihat lokasi file
+    tersebut relatif terhadap root proyek.
+  </li>
+  <li>
+    Membuat kode terlihat lebih rapi dan lebih mudah dibaca karena tidak perlu
     memikirkan relasi antara file yang diimport dan file yang mengimportnya. Ini
     membuat kode Anda lebih mudah dipahami oleh orang lain yang bekerja di
     proyek yang sama.
-  </li>
-  <li>
-    **Lebih mudah di-debug**: Impor absolut juga memudahkan proses debugging
-    karena Anda tidak perlu mengikuti alur ../ untuk menemukan file yang
-    diimport. Anda hanya perlu melihat lokasi file tersebut relatif terhadap
-    root proyek.
-  </li>
-  <li>
-    **Lebih mudah di-refactor**: Impor absolut juga memudahkan proses
-    refactoring kode karena Anda tidak perlu mengubah semua alur impor jika Anda
-    memindahkan file ke lokasi yang berbeda dalam struktur proyek.
-  </li>
-  <li>
-    **Lebih mudah di-scale**: Impor absolut juga memudahkan skalabilitas proyek
-    karena Anda tidak perlu khawatir tentang mengelola banyak alur impor yang
-    mungkin terjadi saat menambahkan file baru atau memindahkan file yang ada.
   </li>
 </ol>
 
 <br />
 
+Dengan menggunakan absolute import, kita dapat mengimpor file dengan mudah dan lebih mudah untuk mengelola proyek kita. Mari lihat bagaimana cara pasti untuk melakukannya.😁
+
+<br />
+
 ### Get Started
 
-According to create-react-app Docs, We can use absolute imports in our react project by configuring a `jsconfig.json / tsconfig.json` (for typescript projects) file in the root of our project. If you're using TypeScript in your project, you will already have a `tsconfig.json` file.
+Menurut dokumen create-react-app , Kita dapat menggunakan absolute import dalam proyek react kita dengan mengonfigurasi file `jsconfig.json / tsconfig.json` (untuk proyek TypeScript) di root proyek kita. Jika Anda menggunakan TypeScript di proyek Anda, Anda sudah memiliki file `tsconfig.json`.
 
-If working in **JS**, add a `jsconfig.json` file in the root of your project with the following content:
+Jika bekerja di **JS**, tambahkan file `jsconfig.json` di root proyek Anda dengan konten berikut:
 
 <div className="code-container">
 ```
@@ -63,7 +62,7 @@ If working in **JS**, add a `jsconfig.json` file in the root of your project wit
 ```
 </div>
 
-If you’re using **TypeScript**, you will already have a `tsconfig.json` file in the root of your project. You can configure the `baseUrl` setting inside the `compilerOptions` of your project's `tsconfig.json` file to start working with absolute imports. The file content would look like this:
+Jika Anda menggunakan **TypeScript**, Anda sudah memiliki file `tsconfig.json` di root proyek Anda. Anda dapat mengonfigurasi pengaturan `baseUrl` di dalam `compilerOptions` file `tsconfig.json` proyek Anda untuk mulai bekerja dengan impor absolut. Konten file akan terlihat seperti ini:
 
 <div className="code-container">
 ```
@@ -79,15 +78,15 @@ If you’re using **TypeScript**, you will already have a `tsconfig.json` file i
 ```
 </div>
 
-In the above file, I have just added a `baseUrl` setting with value src in my `compilerOptions` Nothing else has been changed from the original `tsconfig.json` generated.
+Dalam file di atas, saya baru saja menambahkan pengaturan `baseUrl` dengan nilai src di `compilerOptions` saya. Tidak ada lagi yang diubah dari `tsconfig.json` asli yang dihasilkan.
 
 <br />
 
 ### Converting Relative Imports into Absolute Imports
 
-We have configured our project to use absolute imports, now let's use it.
+Kami telah mengonfigurasi proyek kami untuk menggunakan impor absolut, sekarang mari kita gunakan.
 
-This is a file without absolute imports
+Tanpa menggunakan absolute imports
 
 <div className="code-container">
 ```
@@ -112,7 +111,7 @@ export default SampleComponent
 ```
 </div>
 
-We just need to drop `../../../` from the imports. Now the file looks like
+Sekarang, kita dapat menghilangkan `../../../` dari path import. Setelah itu filenya akan terlihat seperti ini:
 
 <div className="code-container">
 ```
@@ -138,10 +137,10 @@ export default SampleComponent
 </div>
 
 <br />
-Now that we’ve configured our project to support absolute imports, we can import
-a module located at `src/components/Button.js`, like so:
+Sekarang setelah kami mengonfigurasi proyek kami untuk mendukung absolute import,
+kami dapat meng-import modul yang terletak di `src/components/Button.js`, seperti:
 <br />
 `import Button from 'components/Button';`
 <br />
-🔥 And it’s done. We have successfully configured and used absolute imports in our
-React App.
+
+🔥 Dan begitulah cara menggunakan absolute import di proyek React. Semoga bermanfaat.

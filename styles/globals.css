@@ -28,13 +28,13 @@
     @apply text-lg font-bold md:text-xl;
   }
   ol {
-    @apply ml-2 mt-5 list-decimal;
+    @apply ml-2 mt-5 list-disc space-y-2;
   }
   li {
     @apply list-outside;
   }
   code {
-    @apply rounded-md bg-gray-100 font-mono text-sm dark:bg-gray-800;
+    @apply rounded-md bg-gray-100 font-mono text-lg dark:bg-gray-800;
   }
 }
 

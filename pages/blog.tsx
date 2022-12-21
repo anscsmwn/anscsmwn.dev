@@ -23,19 +23,19 @@ const Blog = ({
         <section className="grid grid-cols-1 sm:grid-cols-2">
           {posts.map((post: any) => (
             <Link
-              className="flex w-full flex-col gap-2 rounded-md border-2 border-dashed border-gray-200 p-3 dark:border-light dark:text-gray-300"
+              className="flex w-full flex-col gap-2 rounded-md border-2 border-dashed border-gray-200 dark:border-light dark:text-gray-300"
               href={`/blog/${post.slug}`}
               key={post.slug}
             >
               <Image
-                className="w-full rounded-md md:max-w-lg"
+                className="w-full rounded-md"
                 width={500}
-                height={500}
+                height={200}
                 src={post.frontMatter.thumbnailUrl}
                 alt="preview"
               />
-              <div>
-                <h3>{post.frontMatter.title}</h3>
+              <div className=" p-3">
+                <h3 className="hover:underline">{post.frontMatter.title}</h3>
                 <div className="mt-2 flex items-center gap-2 text-sm text-gray-600 dark:text-zinc-300">
                   <p>{post.frontMatter.date}</p>•<p>{post.readingTime.text}</p>
                 </div>
