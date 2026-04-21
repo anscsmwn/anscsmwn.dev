@@ -6,11 +6,41 @@ import React from 'react';
 const projects = () => {
   const projects = [
     {
+      name: 'HealthKeeper',
+      created: '2024',
+      preview: '',
+      description:
+        'A real-time patient management system that allows doctors to access and update patient data and medical reports.',
+      'source-code': '',
+      demo: '',
+      'tech-stacks': [],
+    },
+    {
+      name: 'Confie.ID',
+      created: '2023',
+      preview: '',
+      description:
+        'A job portal connecting jobseekers and employers — jobseekers can search and apply for openings, employers can post jobs and find qualified candidates.',
+      'source-code': '',
+      demo: '',
+      'tech-stacks': [],
+    },
+    {
+      name: 'Letter Management Information System',
+      created: '2021',
+      preview: '',
+      description:
+        'A web-based system to help administrators track incoming and outgoing letters, ensuring timely responses and better internal communication.',
+      'source-code': '',
+      demo: '',
+      'tech-stacks': [],
+    },
+    {
       name: 'PkDx: A PokeDex App',
       created: 'November 2022',
       preview: '/projects/pkdx.png',
       description: 'A simple pokedex web app built with react.js, typescript.',
-      'source-code': 'https://github.com/aancaa/pkdx',
+      'source-code': 'https://github.com/anscsmwn/pkdx',
       demo: 'https://pkdx-aancaa.vercel.app/',
       'tech-stacks': [
         {

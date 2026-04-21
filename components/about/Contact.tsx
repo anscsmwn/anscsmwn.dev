@@ -7,12 +7,12 @@ const Contact = () => {
   const data = [
     {
       text: 'Email',
-      url: 'mailto:annascasmawannn@gmail.com',
+      url: 'mailto:annasnganro.dev@gmail.com',
       icon: SiGmail,
     },
     {
       text: 'Github',
-      url: 'https://github.com/aancaa',
+      url: 'https://github.com/anscsmwn',
       icon: SiGithub,
     },
     {
@@ -35,10 +35,10 @@ const Contact = () => {
         <p>
           I&apos;m always excited to connect with everyone so please don&apos;t
           hesitate to get in{' '}
-          <Link className="link" href="mailto:annascasmawannn@gmail.com">
+          <Link className="link" href="mailto:annasnganro.dev@gmail.com">
             touch with me
           </Link>{' '}
-          by following my social media bellow:
+          by following my social media below:
         </p>
       </div>
       <div className="mt-5 space-y-5">

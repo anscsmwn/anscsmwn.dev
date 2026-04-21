@@ -12,42 +12,42 @@ const AboutMe = () => {
       <div className="text-xl leading-relaxed dark:text-gray-300">
         <p className="mt-4">
           Hello, my name is <b>Annas Casmawan Ahmad</b>, you can call me{' '}
-          <b>Anca</b>. Yes, i changed my nickname haha, if you&apos;re my
-          school/college friend you maybe know me as <b>Nas</b> or <b>Annas</b>{' '}
-          but that&apos;s ok, you can call me anything you want as long as
-          it&apos;s my name and not someone else <i>wkw</i>.
+          <b>Anca</b>. Yes, I changed my nickname haha — if you&apos;re a
+          school or college friend you probably know me as <b>Nas</b> or{' '}
+          <b>Annas</b>, but honestly call me whatever you want as long as
+          it&apos;s actually my name <i>wkw</i>.
         </p>
         <p className="mt-4">
-          I grew up in a small village located in{' '}
+          I grew up in a small village in{' '}
           <Link
             className="link"
             href="https://www.google.com/search?q=pinrang+sulawesi+selatan"
           >
             Pinrang, Sulawesi Selatan
           </Link>
-          . I&apos;m currently pursuing my Bachelor&apos;s degree in Informatics
-          (Computer science) at{' '}
+          . I completed my Bachelor&apos;s degree in Informatics Engineering at{' '}
           <Link className="link" href="https://www.unhas.ac.id/">
             Hasanuddin University
           </Link>{' '}
-          . I was previously working as a Frontend developer at a software house
-          called{' '}
+          in 2024. My career started as a Frontend Developer at{' '}
           <Link className="link" href="https://upanastudio.com/">
             Upana Studio
           </Link>
-          .
+          , where I turned design mockups into reusable UI components and worked
+          closely with backend engineers to wire up APIs. After that I moved to
+          Singapore to join{' '}
+          <b>Fairtech Pte Ltd</b> as a Software Developer, building and shipping
+          fullstack features across web and mobile platforms for real production
+          users. These days I work independently — taking projects from client
+          brief all the way to deployment, end-to-end.
         </p>
         <p className="mt-4">
-          I love exploring everything related to technology. In my sophomore
-          year, I learned a lot from the community, I join many community and
-          orgs to expand my knowledge, I&apos;m member of{' '}
-          <Link
-            className="link"
-            href="https://www.linkedin.com/company/coder-institute/about/"
-          >
-            Coder Institute HMIF FT-UH
-          </Link>
-          . Rigth now, I&apos;m pursuing my dream to become Frontend developer.
+          I genuinely enjoy the whole stack. Whether it&apos;s designing a clean
+          API, picking the right database schema, or sweating the details on a
+          UI — I find all of it interesting. Over the years I&apos;ve shipped
+          production software in both startup and enterprise environments, and I
+          still get a kick out of seeing something I built actually being used by
+          people.
         </p>
         <p className="mt-4">
           Outside of software developing thingy, I love playing and{' '}
@@ -55,10 +55,10 @@ const AboutMe = () => {
             className="link"
             href="https://open.spotify.com/user/awic6ztjvku6v724so38dg9z0"
           >
-            listening music
+            listening to music
           </Link>
-          . I can (barely) play some music instruments like guitar, ukulele, and
-          kalimba. Also, I love cycling (almost) every weekend.
+          . I can (barely) play some instruments — guitar, ukulele, and kalimba.
+          Also, I love cycling almost every weekend.
         </p>
       </div>
     </section>

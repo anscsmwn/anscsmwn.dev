@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Hi, I&apos;m Nas.</title>
+        <title>Hi, I&apos;m Annas.</title>
       </Head>
       <Main className="cursor-pencil dark:cursor-pencil-dark">
         <Canvas />
@@ -22,7 +22,7 @@ const Home: NextPage = () => {
           </div>
           <div className="w-full text-center md:max-w-md md:text-left lg:max-w-2xl">
             <h1 className="noselect font-doodle">
-              Hi, I&apos;m Nas.
+              Hi, I&apos;m Annas.
               <span>
                 <svg
                   className="wave ml-3 h-10 w-10 fill-black dark:fill-white"
@@ -37,8 +37,8 @@ const Home: NextPage = () => {
             <div className="dark:text-gray-300; my-2 text-center text-sm leading-relaxed dark:text-white sm:text-lg md:text-left">
               <p className="noselect my-2 leading-normal">
                 I&apos;m a software engineer who make a computer goes beep
-                boop... Currently, I&apos;m focusing on learning about front-end
-                developer and UI/UX design.
+                boop... These days I build fullstack web and mobile apps
+                end-to-end, from database to UI.
               </p>
               <p className="leading-normal">
                 Checkout my{' '}
