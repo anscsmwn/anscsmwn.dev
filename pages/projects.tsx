@@ -8,7 +8,7 @@ const projects = () => {
     {
       name: 'HealthKeeper',
       created: '2024',
-      preview: '',
+      preview: '/projects/healthkeeper.png',
       description:
         'A real-time patient management system that allows doctors to access and update patient data and medical reports.',
       'source-code': '',
@@ -18,7 +18,7 @@ const projects = () => {
     {
       name: 'Confie.ID',
       created: '2023',
-      preview: '',
+      preview: '/projects/placeholder.png',
       description:
         'A job portal connecting jobseekers and employers — jobseekers can search and apply for openings, employers can post jobs and find qualified candidates.',
       'source-code': '',
@@ -28,7 +28,7 @@ const projects = () => {
     {
       name: 'Letter Management Information System',
       created: '2021',
-      preview: '',
+      preview: '/projects/placeholder.png',
       description:
         'A web-based system to help administrators track incoming and outgoing letters, ensuring timely responses and better internal communication.',
       'source-code': '',
