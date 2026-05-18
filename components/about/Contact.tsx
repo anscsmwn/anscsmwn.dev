@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { SiGmail, SiSpotify, SiGithub } from 'react-icons/si';
+import { SiGmail, SiGithub } from 'react-icons/si';
 import * as Panelbear from '@panelbear/panelbear-js';
 
 const Contact = () => {
@@ -14,11 +14,6 @@ const Contact = () => {
       text: 'Github',
       url: 'https://github.com/anscsmwn',
       icon: SiGithub,
-    },
-    {
-      text: 'Spotify',
-      url: 'https://open.spotify.com/user/awic6ztjvku6v724so38dg9z0',
-      icon: SiSpotify,
     },
   ];
   const handleViewResume = () => {
@@ -58,7 +53,7 @@ const Contact = () => {
         <Link
           onClick={handleViewResume}
           className="link"
-          href="https://drive.google.com/file/d/1g1vUf7EE5lf9FgQxegkZ9ELQf7r2fQdQ/view?usp=sharing"
+          href="https://drive.google.com/drive/folders/19RX-jNPLpygQWDCIOSaTrgmCIgKJBnFN?hl=ID"
         >
           here
         </Link>
